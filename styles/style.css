@@ -99,8 +99,8 @@ html {
 }
 
 body {
-  background-color: var(--clr-light);
-  color: var(--clr-dark);
+  background-color: var(--bg-clr);
+  color: var(--primary-text-clr);
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -156,5 +156,5 @@ p, a {
 
 a {
   text-decoration: none;
-  color: var(--clr-dark);
+  color: var(--clr-white);
 }
