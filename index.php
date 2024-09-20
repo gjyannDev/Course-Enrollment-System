@@ -8,8 +8,9 @@
    <link rel="stylesheet" href="styles/style.css">
    <link rel="stylesheet" href="styles/modernize.css">
    <link rel="stylesheet" href="styles/utility.css">
+   <link rel="stylesheet" href="styles/components/homepage.css">
 </head>
 <body>
-  <h1>HELLO</h1>
+  
 </body>
 </html>
