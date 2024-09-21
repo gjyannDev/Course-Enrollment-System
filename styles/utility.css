@@ -23,3 +23,12 @@
   align-self: flex-start;
 }
 
+.primary__btn__solid2 {
+  background-color: var(--clr-primary);
+  padding: var(--size-16px) var(--size-56px);
+  font-weight: 500;
+  border-radius: var(--size-6px);
+  color: var(--secondary-text-clr);
+  margin-top: var(--size-28px);
+}
+
