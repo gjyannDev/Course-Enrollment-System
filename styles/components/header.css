@@ -1,0 +1,20 @@
+.header__container {
+  background-color: var(--clr-primary);
+  width: 100%;
+  height: var(--size-72px);
+}
+
+.sub__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__img {
+  width: var(--size-68px);
+}
+
+.nav__links {
+  display: flex;
+  gap: var(--size-24px);
+}
