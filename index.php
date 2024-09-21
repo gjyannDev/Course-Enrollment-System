@@ -52,9 +52,27 @@
         </div>
       </div>
     </section>
-    <!-- <section class = "overview__section"></section>
-    <section class = "footerCta__section"></section>
-    <footer class = "footer__container"></footer> -->
+    <section class = "overview__section section__margin container">
+      <h1>
+        Welcome to Francisco University
+      </h1>
+      <p>
+        Our Course Enrollment System is designed to make the enrollment process smooth and efficient for students, helping you find the right courses and stay on track with your education.
+      </p>
+    </section>
+    <section class = "footer__cta__section">
+      <div class="cta__img__container">
+        <img 
+          src = "assets/images/image_used/calltoaction_img.png" 
+          alt = "Image of the estolas building RTU"
+          class = "footer__cta__img"
+        >
+      </div>
+      <div class="cta__content">
+        
+      </div>
+    </section>
+    <!-- <footer class = "footer__container"></footer> -->
   </main>
 </body>
 </html>
