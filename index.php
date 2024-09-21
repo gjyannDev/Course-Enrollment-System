@@ -24,7 +24,7 @@
         <nav class = "header__nav">
           <ul class = "nav__links">
             <li>
-              <a href="">Login</a>
+              <a href = "studentLogin.php">Login</a>
             </li>
           </ul>
       </nav>
@@ -61,14 +61,12 @@
       </p>
     </section>
     <section class = "footer__cta__section">
-      <div class="cta__img__container">
+      <div class="cta__content">
         <img 
           src = "assets/images/image_used/calltoaction_img.png" 
           alt = "Image of the estolas building RTU"
           class = "footer__cta__img"
         >
-      </div>
-      <div class="cta__content">
         <div class = "cta__content__container">
           <h1>
             Discover Your Dream Course.
@@ -79,7 +77,13 @@
         </div>
       </div>
     </section>
-    <!-- <footer class = "footer__container"></footer> -->
+    <footer class = "footer__container container">
+      <div class="address__contents">
+
+      </div>
+      <div class="info__contents"></div>
+      <div class="social__contents"></div>
+    </footer>
   </main>
 </body>
 </html>
