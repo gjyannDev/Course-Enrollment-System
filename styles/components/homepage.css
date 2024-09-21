@@ -1,3 +1,4 @@
+/* Header section styles declarations */
 .header__container {
   width: 100vw;
   background-color: var(--clr-primary);
@@ -15,6 +16,7 @@
   width: var(--size-52px);
 }
 
+/* hero section styles declarations */
 .heroImgContainer {
   position: relative;
 }
@@ -74,3 +76,14 @@
   font-size: var(--size-24px);
   line-height: var(--size-32px);
 }
+
+/* footer call to action style declarations */
+.footer__cta__img {
+  width: 100vw;
+  height: 456px;
+  overflow: hidden;
+  object-fit: scale-contain;
+}
+
+
+
