@@ -83,6 +83,7 @@
   height: 456px;
   overflow: hidden;
   object-fit: scale-contain;
+  display: block;
 }
 
 .cta__content {
@@ -91,7 +92,7 @@
 
 .cta__content__container {
   position: absolute;
-  bottom: var(--size-104px);
+  top: var(--size-104px);
   display: flex;
   flex-direction: column;
   gap: var(--size-80px);
@@ -110,4 +111,11 @@
 
 .cta__content__container button {
   align-self: center;
+}
+
+/* footer style declarations */
+.footer__container {
+  background-color: var(--clr-primary);
+  width: 100vw;
+  height: 224px;
 }
