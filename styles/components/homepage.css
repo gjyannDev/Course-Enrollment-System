@@ -85,5 +85,29 @@
   object-fit: scale-contain;
 }
 
+.cta__content {
+  position: relative;
+}
 
+.cta__content__container {
+  position: absolute;
+  bottom: var(--size-104px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-80px);
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
 
+.cta__content__container h1 {
+  color: var(--secondary-text-clr);
+  font-size: var(--size-72px);
+  line-height: var(--size-72px);
+  margin: 0;
+  padding: 0;
+}
+
+.cta__content__container button {
+  align-self: center;
+}
