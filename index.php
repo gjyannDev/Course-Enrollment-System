@@ -69,7 +69,14 @@
         >
       </div>
       <div class="cta__content">
-        
+        <div class = "cta__content__container">
+          <h1>
+            Discover Your Dream Course.
+          </h1>
+          <button class = "primary__btn__solid">
+            Enroll Now
+          </button>
+        </div>
       </div>
     </section>
     <!-- <footer class = "footer__container"></footer> -->
