@@ -48,23 +48,6 @@
   text-align: center;
 }
 
-.input {
-  min-width: 384px;
-  height: var(--size-48px);
-  margin: 8px 0 0;
-  padding: 0 var(--size-16px);
-  border: solid 1px #e2e8f0;
-  border-radius: var(--size-6px);
-  outline: none;
-}
-
-.label {
-  display: block;
-  font-size: .9rem;
-  font-weight: bold;
-  color: var(--primary-text-clr);
-}
-
 .input__container {
   display: flex;
   flex-direction: column;

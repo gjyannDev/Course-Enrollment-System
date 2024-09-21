@@ -1,0 +1,24 @@
+.title__container h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.registration__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-84px);
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-56px);
+}
+
+.input__container button {
+  align-self: flex-start;
+}
+
+.input__form__container {
+  margin-bottom: var(--size-92px);
+}

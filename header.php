@@ -16,7 +16,6 @@
           class = "logo__img"
         >
       </div>
-
       <div class="right__content">
         <nav class = "header">
           <ul class = "nav__links">
