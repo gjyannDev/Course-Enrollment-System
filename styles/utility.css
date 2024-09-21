@@ -15,5 +15,6 @@
   padding: var(--size-16px) var(--size-56px);
   font-weight: 500;
   border-radius: var(--size-8px);
+  align-self: flex-start;
 }
 
