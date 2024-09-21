@@ -1,0 +1,72 @@
+.img__container {
+  width: 60vw;
+}
+
+.img__container img {
+  width: 700px;
+  height: 750px;
+  display: block;
+}
+
+.content__container {
+  display: flex;
+  gap: var(--size-92px);
+}
+
+.logo__img {
+  width: var(--size-110px);
+}
+
+/* form style declarations */
+.form__main__container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  margin-right: var(--size-92px);
+  gap: var(--size-48px);
+}
+
+.login__text__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-28px);
+}
+
+.login__text__content h1 {
+  font-size: var(--size-40px);
+  font-weight: 600;
+  line-height: var(--size-40px);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.login__text__content p {
+  font-weight: 500;
+  font-size: var(--size-20px);
+  text-align: center;
+}
+
+.input {
+  min-width: 384px;
+  height: var(--size-48px);
+  margin: 8px 0 0;
+  padding: 0 var(--size-16px);
+  border: solid 1px #e2e8f0;
+  border-radius: var(--size-6px);
+  outline: none;
+}
+
+.label {
+  display: block;
+  font-size: .9rem;
+  font-weight: bold;
+  color: var(--primary-text-clr);
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-36px);
+}
