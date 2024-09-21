@@ -6,8 +6,13 @@
   padding-right: var(--size-60px);
 }
 
-.section {
+.section__margin {
   margin-top: var(--size-124px);
+}
+
+.hero__section__margin {
+  padding-left: var(--size-160px);
+  padding-right: var(--size-96px);
 }
 
 .primary__btn__solid {

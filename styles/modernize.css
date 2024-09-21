@@ -19,6 +19,8 @@
  html {
    line-height: 1.15; /* 1 */
    -webkit-text-size-adjust: 100%; /* 2 */
+   margin:0;
+   padding:0;
  }
  
  /* Sections
@@ -31,6 +33,7 @@
  
  body {
    margin: 0; /* 1 */
+   padding:0;
    font-family: system-ui, sans-serif; /* 2 */
  }
  
