@@ -1,8 +1,8 @@
 /* import font */
 
 @font-face {
-  font-family: 'generalSans';
-  src: url(assets/font/generalsans.ttf) format('truetype');
+  font-family: generalSans;
+  src: url('../assets/font/generalsans.ttf') format('truetype');
 } 
 
 :root{
@@ -146,12 +146,12 @@ button {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'generalsans', sans-serif;
-  font-weight: 700;
+  font-family: generalSans;
+  font-weight: 600;
 }
 
 p, a {
-  font-family: 'generalsans', sans-serif;
+  font-family: generalSans;
 }
 
 a {
