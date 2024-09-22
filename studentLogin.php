@@ -37,15 +37,15 @@
                 Hey enter your account to log in into your account
               </p>
            </div>
-           <form action="" method = "POST">
+           <form action="stu_login.php" method = "POST">
               <div class="input__container">
                 <div class="input__group">
-                    <label class="label">Student Number</label>
-                    <input type="studentNumber" name="text" class="input" pattern="\d+">
+                    <label class="label">Email</label>
+                    <input type="text" name="email" class="input" pattern="\d+">
                 </div>
                 <div class="input__group">
                     <label class="label">Password</label>
-                    <input type="password" name="text" class="input" pattern="\d+">
+                    <input type="password" name="userPass" class="input" pattern="\d+">
                 </div>
                 <button type="submit" class="primary__btn__solid2">Login</button>
               </div>
