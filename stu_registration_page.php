@@ -3,6 +3,10 @@
   include 'connect_db.php';
 
   session_start();
+
+  if(!isset($_SESSION['user_name'])){
+    header('location:login_form.php');
+ } 
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +25,7 @@
   <main class = "main__container">
     <section class = "registration__container margin__input">
       <div class="title__container">
+        <h1><span><?php echo $_SESSION['user_name'] ?></span> Connected Successfully</h1>
         <h1>
           Student Registration
         </h1>
