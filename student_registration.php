@@ -26,19 +26,18 @@
         </h1>
       </div>
       <div class="input__form__container">
-        <form action="stu_reg.php" method = "POST">
+        <form action="stu_reg_tbl.php" method = "POST">
           <div class="input__container">
             <div class="input__group">
                 <label class="label">Student Name</label>
                 <input type="text" name="student_name" class="input">
-            </div>
-            <div class="input__group">
+            </div>            <div class="input__group">
                 <label class="label">Birthdate</label>
                 <input type="date" name="birthdate" class="input">
             </div>
             <div class="input__group">
               <label class="label">Course</label>
-                <select class="input" name="course" onchange="showCourses()" required>
+                <select class="input" name="course" required>
                   <option value="">-- Select Course --</option>
                   <option value="BS Civil Engineering">BS Civil Engineering</option>
                   <option value="BS Mechanical Engineering">BS Mechanical Engineering</option>
