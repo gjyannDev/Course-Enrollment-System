@@ -13,17 +13,29 @@ $createTable = mysqli_query($connection, $sql);
 
 //!Temporary checker
 if ( $createTable ) {
-  //!fixed and put it in the middle
-  // echo '<div class= "main__container">';
-  // echo '<div class="card">';
-  // echo '<img src="assets/images/image_used/check-circle.svg" alt="" id="cookieSvg">';
-  // echo '<h1 class="cookieHeading">Items Added Successfully</h1>';
-  // echo '<p class="cookieDescription">Your inputted values will now be stored in the database.';
-  // echo  '</div>';
-  // echo  '</div>';
+  echo <<<HTML
+  <div class= 'card__main__container'>
+    <div class = "card_sub_container" >
+      <div class="card">
+        <button type='button'  class = 'dismiss' onclick="submit();">
+          <img src = 'assets/images/icon/x.svg'>
+        </button>
+        <div class = "img_container">
+          <img src="assets/images/image_used/check-circle.svg" alt="" id="cookieSvg">
+        </div>
+        <h1 class="cookieHeading">user_tbl Created Sucessfully</h1>
+        <p class="cookieDescription"> 
+          user_tbl is now created you can now use the user for login
+        </p>
+      </div>
+    </div>
+  </div>
+  HTML;
 } else {
   echo "Error creating table: " . mysqli_error($connection);
 }
+
+
 
 //!create a modal window for table successfully created
 
