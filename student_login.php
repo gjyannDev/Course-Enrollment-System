@@ -1,3 +1,40 @@
+<?php
+
+session_start();
+
+include 'login_tbl.php';
+
+if (isset($_POST['submit'])) {
+
+  $email = $_POST['email'];
+  $user_password  = $_POST['user_password'];
+
+  $select  = "SELECT * FROM user_tbl WHERE email = '$email' AND user_password = '$user_password'";
+
+  $result  = mysqli_query($connection, $select ) or die('query failed');
+
+  if ( mysqli_num_rows($result ) > 0 ) {
+
+    $row = mysqli_fetch_assoc($result );
+
+   if($row['user_type'] == 'admin'){
+
+      $_SESSION['admin_name'] = $row['user_name'];
+      header('location: index.php');
+
+   } elseif($row['user_type'] == 'user'){
+
+      $_SESSION['user_name'] = $row['user_name'];
+      header('location: studentRegistration.php');
+      exit();
+   } 
+
+  } else {
+    $error[] = 'incorrect email or password';
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,15 +74,23 @@
                 Hey enter your account to log in into your account
               </p>
            </div>
-           <form action="stu_login.php" method = "POST">
+           <!-- error message -->
+           <?php
+            if( isset($error) ){
+              foreach( $error as $error ){
+                  echo '<div class = "error-msg">' . $error. '</div>';
+              };
+            };
+           ?>
+           <form action = " " method = "POST">
               <div class="input__container">
                 <div class="input__group">
                     <label class="label">Email</label>
-                    <input type="text" name="email" class="input" pattern="\d+">
+                    <input type="email" name="email" class="input" required>
                 </div>
                 <div class="input__group">
                     <label class="label">Password</label>
-                    <input type="password" name="userPass" class="input" pattern="\d+">
+                    <input type="password" name="user_password" class="input" required>
                 </div>
                 <button type="submit" class="primary__btn__solid2">Login</button>
               </div>
