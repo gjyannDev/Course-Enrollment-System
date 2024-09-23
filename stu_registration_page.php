@@ -5,10 +5,10 @@
   session_start();
 
   if(!isset($_SESSION['user_name'])){
-    header('location:login_form.php');
- } 
+      header('location:login_form.php');
+  } 
+  
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,12 +20,30 @@
   <link rel="stylesheet" href="styles/modernize.css">
   <link rel="stylesheet" href="styles/utility.css">
   <link rel="stylesheet" href="styles/components/studentRegistration.css">
+  <link rel="stylesheet" href="styles/components/mwregister.css">
+  <!-- script -->
+  <script src = "js/close_btn.js" defer></script>
 </head>
 <body>
   <main class = "main__container">
+  <div class= 'card__main__container'>
+    <div class = "card_sub_container" >
+      <div class="card">
+        <button type='button' class='dismiss' onclick="submit();">
+          <img src='assets/images/icon/x.svg'>
+        </button>
+        <div class="img_container">
+          <img src="assets/images/image_used/check-circle.svg" alt="" id="cookieSvg">
+        </div>
+        <h1 class="cookieHeading"><span><?php echo $_SESSION['user_name'] ?></span> Connected Successfully</h1>
+        <p class="cookieDescription"> 
+          You are now connected, Welcome master shifu.
+        </p>
+      </div>
+    </div>
+  </div>
     <section class = "registration__container margin__input">
       <div class="title__container">
-        <h1><span><?php echo $_SESSION['user_name'] ?></span> Connected Successfully</h1>
         <h1>
           Student Registration
         </h1>
