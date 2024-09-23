@@ -35,7 +35,7 @@
               </a>
             </li>
             <li class = "" >
-              <a href = "">
+              <a href = "logout.php">
                 Logout
               </a>
             </li>
