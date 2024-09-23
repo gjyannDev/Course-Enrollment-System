@@ -55,3 +55,71 @@
   font-weight: bold;
   color: var(--primary-text-clr);
 }
+
+.error-msg{
+  color: red;
+}
+
+/* modal window styles declaration */
+.card__main__container {
+  position: relative;
+}
+
+.card_sub_container {
+  height: 132vh;
+  width: 98.7vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 41, 0.3);
+}
+
+.card {
+  position: absolute;
+  top: var(--size-118px);
+  bottom: 0;
+  height: 292px;
+  background-color: #f1f2f4;
+  border-radius: var(--size-8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 72px;
+  gap: var(--size-16px);
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h1 {
+  padding: 0;
+  margin: 0;
+  font-size: var(--size-24px);
+  width: 350px;
+}
+
+.card .img_container img {
+  width: var(--size-48px);
+}
+
+.card p {
+  line-height: var(--size-20px);
+}
+
+.dismiss {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  transition: .3s ease;
+}
+
