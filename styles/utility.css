@@ -6,6 +6,10 @@
   padding-right: var(--size-60px);
 }
 
+.secondary_bg_txt {
+  color: var(--primary-text-clr);
+}
+
 .section__margin {
   margin-top: var(--size-124px);
 }
