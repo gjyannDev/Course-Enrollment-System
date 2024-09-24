@@ -79,10 +79,42 @@
     </section>
     <footer class = "footer__container container">
       <div class="address__contents">
-
+        <img src="assets/images/icon/logo.png" alt="fu logo">
+        <h3>Francisco University</h3>
+        <p>
+          Boni Avenue, Sacrepante Corner, Brgy. Malamig, Mandaluyong City
+        </p>
       </div>
-      <div class="info__contents"></div>
-      <div class="social__contents"></div>
+      <div class="info__contents">
+        <div class="info__one info">
+          <img src="assets/images/icon/mail.svg" alt="mail icon">
+          <p>franciscouniversity@fu.edu.ph</p>
+        </div>
+        <div class="info__two info">
+          <img src="assets/images/icon/globe.svg" alt="globe icon">
+          <p>www.franciscouniversity.fu.ph</p>
+        </div>
+        <div class="info__three info">
+          <img src="assets/images/icon/phone.svg" alt="phone icon">
+          <p>(02) 8534-8627 / 8534-9627</p>
+        </div>
+      </div>
+      <div class="social__contents">
+        <h3>
+          Find us in social media
+        </h3>
+        <div class="social__link">
+          <div class="social__one social">
+            <img src="assets/images/icon/facebook.svg" alt="facebook icon">
+          </div>
+          <div class="social__two social">
+            <img src="assets/images/icon/twitter.svg" alt="twitter icon">
+          </div>
+          <div class="social__three social">
+            <img src="assets/images/icon/youtube.svg" alt="youtube icon">
+          </div>
+        </div>
+      </div>
     </footer>
   </main>
 </body>
