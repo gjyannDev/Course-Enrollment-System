@@ -1,0 +1,68 @@
+.hero__sectionUP {
+  background-color: var(--clr-black);
+  color: var(--secondary-text-clr);
+  padding-top: var(--size-96px);
+  height: 424px;
+}
+
+.hero__text__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-40px);
+}
+
+.hero__sectionUP h1 {
+  margin: 0;
+  padding: 0;
+  font-size: var(--size-64px);
+  line-height: var(--size-64px);
+}
+
+.hero__sectionUP p {
+  font-size: var(--size-20px);
+}
+
+.hero__sectionUP button {
+  margin-top: var(--size-8px);
+}
+
+.actions {
+  display: flex;
+  gap: var(--size-68px);
+  justify-content: center;
+  margin: var(--size-100px) 0;
+}
+
+.action__card {
+  background-color: var(--action-bg-clr);
+  height: 210px;
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-20px);
+  padding: var(--size-36px) var(--size-72px);
+}
+
+.action__card img {
+  width: 100px;
+  height: 100px;
+}
+
+.action__card h2 {
+  font-size: var(--size-20px);
+  line-height: var(--size-20px);
+}
+
+.footer__contaierUP {
+  height: 124px;
+  background-color: var(--clr-primary);
+  display: flex;
+  align-items: center;
+}
+
+.footer__text__content {
+  color: var(--secondary-text-clr);
+  display: flex;
+  gap: var(--size-36px);
+}
