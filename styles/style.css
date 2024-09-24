@@ -14,12 +14,14 @@
   --clr-success: #38FF59;
   --clr-error: #FF3838 ;
   --clr-gray-200: #A0AEC0;
+  --clr-gray-100: #f1f2f4;
 
   /* design tokens */
   --primary-text-clr: var(--clr-black);
   --secondary-text-clr: var(--clr-white);
   --text-label-clr: var(--clr-gray-200);
   --bg-clr: var(--clr-white);
+  --action-bg-clr: var(--clr-gray-100);
   
    /* sizes */
    --size-4px: 0.25rem;
@@ -143,6 +145,10 @@ button {
   background: none;
   display: inline-block;
   padding: 0;
+}
+
+input[type = "button"] {
+  border: none;
 }
 
 h1, h2, h3, h4 {
