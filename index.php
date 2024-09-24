@@ -24,7 +24,7 @@
         <nav class = "header__nav">
           <ul class = "nav__links">
             <li>
-              <a href = "studentLogin.php">Login</a>
+              <a href = "stu_login_page.php">Login</a>
             </li>
           </ul>
       </nav>
