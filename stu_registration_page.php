@@ -87,7 +87,7 @@
             </div>
             <div class="input__group">
                 <label class="label">Email</label>
-                <input type="text" name="email" class="input">
+                <input type="email" name="email" class="input">
             </div>
             <button type="submit" class="primary__btn__solid2">Register</button>
           </div>
