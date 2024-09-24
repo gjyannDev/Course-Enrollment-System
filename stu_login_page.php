@@ -45,6 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link rel="stylesheet" href="styles/modernize.css">
   <link rel="stylesheet" href="styles/utility.css">
   <link rel="stylesheet" href="styles/components/studentLogin.css">
+  <link rel="stylesheet" href="styles/components/mwlogin.css">
   <script src = "js/close_btn.js" defer></script>
 </head>
 <body>
