@@ -6,6 +6,8 @@
   width: 700px;
   height: 750px;
   display: block;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
 }
 
 .content__container {
@@ -15,6 +17,8 @@
 
 .logo__img {
   width: var(--size-110px);
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
 }
 
 /* form style declarations */
