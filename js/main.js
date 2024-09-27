@@ -7,3 +7,7 @@ function submit() {
     console.log('clicked');
   });
 }
+
+function clearInputField() {
+  document.querySelector(".form__container").reset()
+}
