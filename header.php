@@ -13,11 +13,13 @@
   <header class = "header__container">
     <div class="sub__container container">
       <div class="left__content">
-        <img 
-          src = "assets/images/icon/logo.png" 
-          alt = "logo of the FU"
-          class = "logo__img"
-        >
+        <a href="index.php">
+          <img 
+            src = "assets/images/icon/logo.png" 
+            alt = "logo of the FU"
+            class = "logo__img"
+          >
+        </a>
       </div>
       <div class="right__content">
         <nav class = "header">
