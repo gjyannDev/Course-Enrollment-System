@@ -9,7 +9,7 @@
    <link rel="stylesheet" href="styles/modernize.css">
    <link rel="stylesheet" href="styles/utility.css">
    <link rel="stylesheet" href="styles/components/homepage.css">
-</head>
+</head> 
 <body>
   <main class = "main__container">
     <header class = "header__container">
@@ -41,7 +41,7 @@
         </div>
         <div class="hero__text__content hero__section__margin">
           <h1 class = "hero__title">
-            ENROLL IN YOUR FUTURE TODAY.
+            ENROLL IN YOUR FUTURE TODAY
           </h1>
           <p class = "hero_description">
             Access a wide variety of courses and start your learning journey now!
