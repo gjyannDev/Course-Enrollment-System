@@ -22,3 +22,9 @@
 .input__form__container {
   margin-bottom: var(--size-92px);
 }
+
+/* Student Registration clear fields */
+.button__fileds {
+  display: flex;
+  gap: var(--size-40px);
+}

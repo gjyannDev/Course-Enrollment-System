@@ -42,6 +42,15 @@
   margin-top: var(--size-28px);
 }
 
+.clear__input__btn {
+  padding: var(--size-16px) var(--size-56px);
+  font-weight: 500;
+  border-radius: var(--size-6px);
+  color: var(--clr-primary);
+  margin-top: var(--size-28px);
+  border: 2px var(--clr-primary) solid;
+} 
+
 /* input style declaration */
 .input {
   min-width: 384px;
