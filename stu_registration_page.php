@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="styles/components/studentRegistration.css">
   <link rel="stylesheet" href="styles/components/mwregister.css">
   <!-- script -->
-  <script src = "js/close_btn.js" defer></script>
+  <script src = "js/main.js" defer></script>
 </head>
 <body>
   <main class = "main__container">
@@ -48,7 +48,7 @@
         </h1>
       </div>
       <div class="input__form__container">
-        <form action="stu_reg_tbl.php" method = "POST">
+        <form action="stu_reg_tbl.php" method = "POST" class = "form__container">
           <div class="input__container">
             <div class="input__group">
                 <label class="label">Student Name</label>
@@ -88,7 +88,10 @@
                 <label class="label">Email</label>
                 <input type="email" name="email" class="input">
             </div>
-            <button type="submit" class="primary__btn__solid2">Register</button>
+            <div class="button__fileds">
+              <button type="submit" class="primary__btn__solid2">Register</button>
+              <button class="clear__input__btn" onclick="clearInputField()">Clear Fields</button>
+            </div>
           </div>
         </form>
       </div>
