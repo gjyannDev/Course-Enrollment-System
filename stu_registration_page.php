@@ -48,54 +48,27 @@
         </h1>
       </div>
       <div class="input__form__container">
-        <form action="stu_reg_tbl.php" method = "POST" class = "form__container">
-          <div class="input__container">
+        <form action="" method="POST" class="form__container">
+          <div class="multi__input">
             <div class="input__group">
-                <label class="label">Student Name</label>
-                <input type="text" name="student_name" class="input">
-            </div>            <div class="input__group">
-                <label class="label">Birthdate</label>
-                <input type="date" name="birthdate" class="input">
+              <label class="label">First Name</label>
+              <input type="text" name="f_name" class="input multi__input__size" required>
             </div>
             <div class="input__group">
-              <label class="label">Course</label>
-                <select class="input" name="course" required>
-                  <option value="">-- Select Course --</option>
-                  <option value="BS Civil Engineering">BS Civil Engineering</option>
-                  <option value="BS Mechanical Engineering">BS Mechanical Engineering</option>
-                  <option value="BS Electrical Engineering">BS Electrical Engineering</option>
-                  <option value="BS Electronics Engineering">BS Electronics Engineering</option>
-                  <option value="BS Computer Engineering">BS Computer Engineering</option>
-                  <option value="BS Industrial Engineering">BS Industrial Engineering</option>
-                  <option value="BS Mechatronics Engineering">BS Mechatronics Engineering</option>
-                  <option value="BS Architecture">BS Architecture</option>
-                  <option value="BS Information Technology">BS Information Technology</option>
-                  <option value="BS Accountancy">BS Accountancy</option>
-                  <option value="BS Entrepreneurship">BS Entrepreneurship</option>
-                  <option value="BS Business Administration">BS Business Administration</option>
-                  <option value="BS Office Administration">BS Office Administration</option>
-                  <option value="BS Psychology">BS Psychology</option>
-                  <option value="BS Astronomy">BS Astronomy</option>
-                  <option value="BS Statistics">BS Statistics</option>
-                  <option value="BS Biology">BS Biology</option>
-                  <option value="BS Political Science">BS Political Science</option>
-                  <option value="BS Education">BS Education</option>
-                  <option value="BS Technical Vocational">BS Technical Vocational</option>
-                  <option value="BS Physical Education">BS Physical Education</option>
-              </select>
-            </div>
-            <div class="input__group">
-                <label class="label">Email</label>
-                <input type="email" name="email" class="input">
-            </div>
-            <div class="button__fileds">
-              <button type="submit" class="primary__btn__solid2">Register</button>
-              <button class="clear__input__btn" onclick="clearInputField()">Clear Fields</button>
+              <label class="label">Last Name</label>
+              <input type="text" name="l_name" class="input multi__input__size" required>
             </div>
           </div>
         </form>
       </div>
     </section>
+    <!-- <section class="qualification__container">
+      <div class="title__container">
+        <h1>
+          Student Registration
+        </h1>
+      </div>
+    </section> -->
   </main>
 </body>
 </html>
