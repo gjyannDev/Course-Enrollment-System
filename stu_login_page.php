@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if($row['user_type'] == 'admin'){
 
       $_SESSION['admin_name'] = $row['user_name'];
-      header('location: index.php');
+      header('location: admin_page.php');
 
    } elseif($row['user_type'] == 'user'){
 
@@ -69,7 +69,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               >
             </a>
           </div>
-          <!-- <div class = "toggle__container"></div> -->
            <div class="login__text__content">
               <h1>
                 Student Login
