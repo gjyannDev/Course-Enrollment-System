@@ -49,7 +49,7 @@ $resultCheckUser = $connection->query($checkSql);
 //Insert user that can only access the page
 if (mysqli_num_rows($resultCheckUser) == 0) {
   $user_tbl_insert = "INSERT INTO user_tbl (email, user_name, user_password, user_type) 
-                      VALUES ('2022-102785@rtu.edu.ph', 'Francis', 'ghian123', 'user'),
+                      VALUES ('2022-102785@rtu.edu.ph', 'Francis', 'ghian123', 'admin'),
                             ('2022-102657@rtu.edu.ph', 'Castañeda', 'cas123', 'user'),
                             ('2022-108621@rtu.edu.ph', 'Vinluan', 'des123', 'user'),
                             ('2022-103011@rtu.edu.ph', 'Misagal', 'gar123', 'user'),
