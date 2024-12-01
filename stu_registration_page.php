@@ -25,22 +25,6 @@
 </head>
 <body>
   <main class = "main__container">
-  <div class= 'card__main__container'>
-    <div class = "card_sub_container" >
-      <div class="card">
-        <button type='button' class='dismiss' onclick="submit();">
-          <img src='assets/images/icon/x.svg'>
-        </button>
-        <div class="img_container">
-          <img src="assets/images/image_used/check-circle.svg" alt="" id="cookieSvg">
-        </div>
-        <h1 class="cookieHeading"><span><?php echo $_SESSION['user_name'] ?></span> Connected Successfully</h1>
-        <p class="cookieDescription"> 
-          You are now connected, Welcome master shifu.
-        </p>
-      </div>
-    </div>
-  </div>
     <section class = "registration__container margin__input">
       <div class="title__container">
         <h1>
