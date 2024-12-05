@@ -11,32 +11,14 @@ if (mysqli_num_rows($result) == 0) {
       email VARCHAR(50) PRIMARY KEY,
       user_name VARCHAR(30) NOT NULL,
       user_password VARCHAR(30) NOT NULL,
-      user_type VARCHAR(30) NOT NULL
+      user_type VARCHAR(30) NOT NULL,
+      user_image VARCHAR(255)
     )";
 
     $createTable = mysqli_query($connection, $sql);
 
-    if ($createTable) {
-        echo <<<HTML
-        <div class= 'card__main__container'>
-          <div class = "card_sub_container" >
-            <div class="card">
-              <button type='button' class='dismiss' onclick="submit();">
-                <img src='assets/images/icon/x.svg'>
-              </button>
-              <div class="img_container">
-                <img src="assets/images/image_used/check-circle.svg" alt="" id="cookieSvg">
-              </div>
-              <h1 class="cookieHeading">user_tbl Created Successfully</h1>
-              <p class="cookieDescription"> 
-                user_tbl is now created; you can now use the user for login
-              </p>
-            </div>
-          </div>
-        </div>
-        HTML;
-    } else {
-        echo "Error creating table: " . mysqli_error($connection);
+    if (!$createTable) {
+      echo "Error creating table: " . mysqli_error($connection);
     }
 }
 
@@ -48,13 +30,13 @@ $resultCheckUser = $connection->query($checkSql);
 
 //Insert user that can only access the page
 if (mysqli_num_rows($resultCheckUser) == 0) {
-  $user_tbl_insert = "INSERT INTO user_tbl (email, user_name, user_password, user_type) 
-                      VALUES ('2022-102785@rtu.edu.ph', 'Francis', 'ghian123', 'admin'),
-                            ('2022-102657@rtu.edu.ph', 'Castañeda', 'cas123', 'user'),
-                            ('2022-108621@rtu.edu.ph', 'Vinluan', 'des123', 'user'),
-                            ('2022-103011@rtu.edu.ph', 'Misagal', 'gar123', 'user'),
-                            ('2022-102787@rtu.edu.ph', 'Ansog', 'arjay123', 'user'),
-                            ('2022-103220@rtu.edu.ph', 'Santillan', 'kuz123', 'user')";
+  $user_tbl_insert = "INSERT INTO user_tbl (email, user_name, user_password, user_type, user_image) 
+                      VALUES ('2022-102785@rtu.edu.ph', 'Francis', 'ghian123', 'admin', 'assets/images/image_used/ghian.jpg'),
+                            ('2022-102657@rtu.edu.ph', 'Castañeda', 'cas123', 'user', 'assets/images/image_used/john.png'),
+                            ('2022-108621@rtu.edu.ph', 'Vinluan', 'des123', 'user', 'assets/images/image_used/des.png'),
+                            ('2022-103011@rtu.edu.ph', 'Misagal', 'gar123', 'user', 'assets/images/image_used/edgar.png'),
+                            ('2022-102787@rtu.edu.ph', 'Ansog', 'arjay123', 'user', 'assets/images/image_used/jay.png'),
+                            ('2022-103220@rtu.edu.ph', 'Santillan', 'kuz123', 'user', 'assets/images/image_used/kuz.png')";
 
   $insertValue = mysqli_query($connection, $user_tbl_insert);
 }
