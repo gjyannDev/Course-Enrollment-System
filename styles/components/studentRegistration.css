@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.title__container {
+  margin-bottom: var(--size-32px);
+}
+
 .registration__container {
   display: flex;
   flex-direction: column;
@@ -23,8 +27,94 @@
   margin-bottom: var(--size-92px);
 }
 
+.multi__input__size {
+  padding: 0 var(--size-16px);
+  min-width: 272px;
+}
+
 /* Student Registration clear fields */
 .button__fileds {
   display: flex;
   gap: var(--size-40px);
+}
+
+/* hobbies style declarations */
+.input[type="checkbox"]:checked + .custom-checkbox::after {
+  opacity: 1;
+} 
+
+.check__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-8px);
+}
+
+.hobbies__container {
+  display: flex;
+  gap: var(--size-8px);
+}
+
+.hobbies {
+  display: flex;
+  gap: var(--size-16px);
+}
+
+.check__other {
+  align-self: flex-start;
+}
+
+.hobbies_sub {
+  display: flex;
+  gap: 4px;
+}
+
+.other__hobbies {
+  align-self: flex-start;
+}
+
+.hobbies__main {
+  margin-top: var(--size-16px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-8px);
+  color: var(--clr-black);
+}
+
+.check__box label {
+  display: flex;
+  gap: var(--size-4px);
+}
+
+
+/* qualification table */
+.qualification__container {
+  margin-bottom: var(--size-84px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-48px);
+  margin-top: 256px;
+}
+
+.input__course {
+  min-width: 704px;
+  height: var(--size-48px);
+}
+
+.qual__input {
+  height: var(--size-40px);
+  margin: 8px 0 0;
+  padding: 0 var(--size-16px);
+  border: solid 1px #e2e8f0;
+  border-radius: var(--size-6px);
+  outline: none;
+}
+
+tr.spaceUnder>td {
+  padding-bottom: 1em;
+  padding-right: 8px;
+}
+
+.qualification__main {
+  margin-top: var(--size-92px);
 }

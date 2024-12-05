@@ -39,15 +39,13 @@
   font-weight: 500;
   border-radius: var(--size-6px);
   color: var(--secondary-text-clr);
-  margin-top: var(--size-28px);
 }
 
 .clear__input__btn {
-  padding: var(--size-16px) var(--size-56px);
+  padding: 14px var(--size-56px);
   font-weight: 500;
   border-radius: var(--size-6px);
   color: var(--clr-primary);
-  margin-top: var(--size-28px);
   border: 2px var(--clr-primary) solid;
 } 
 
@@ -105,4 +103,28 @@
   width: 30px;
   height: 30px;
   border-radius: 7px;
+}
+
+.multi__input {
+  display: flex;
+  gap: var(--size-40px);
+}
+
+.single__input {
+  min-width: 584px;
+}
+
+.button__fields {
+  display: flex;
+  gap: var(--size-32px);
+  align-items: center;
+  margin: var(--size-56px) 0 0 0;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
