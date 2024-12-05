@@ -24,7 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    } elseif($row['user_type'] == 'user'){
 
       $_SESSION['user_name'] = $row['user_name'];
-      header('location: stu_registration_page.php');
+      $_SESSION['user_image'] = $row['user_image'];
+      header('location: user_home_page.php');
       exit();
    } 
 
