@@ -1,0 +1,33 @@
+/* table styles declarations */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #dadee9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: var(--size-40px) auto;
+}
+
+td {
+  border-left:1px solid #b9bdc8; 
+  border-bottom:1px solid #b9bdc8; 
+}
+
+th, td {
+  padding: 2px 13px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  font-weight: bold;
+  text-align: left;
+}
+
+h1 {
+  color: var(--clr-black);
+  margin: 0;
+  font-size: 24px;
+  margin: 32px 0 0 26px;
+}
