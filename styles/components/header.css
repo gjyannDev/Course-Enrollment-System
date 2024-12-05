@@ -1,13 +1,13 @@
 .header__container {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-black);
   width: 100%;
-  height: var(--size-72px);
 }
 
 .sub__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: var(--size-88px);
 }
 
 .logo__img {
@@ -17,4 +17,21 @@
 .nav__links {
   display: flex;
   gap: var(--size-24px);
+  align-items: center;
+}
+
+.avatar__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.nav__links li span {
+  color: var(--clr-white);
+}
+
+.profile__container {
+  display: flex;
+  align-items: center;
+  gap: var(--size-8px);
 }
