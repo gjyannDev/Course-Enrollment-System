@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +17,7 @@
   <header class = "header__container">
     <div class="sub__container container">
       <div class="left__content">
-        <a href="index.php">
+        <a href="user_home_page.php">
           <img 
             src = "assets/images/icon/logo.png" 
             alt = "logo of the FU"
@@ -24,19 +28,20 @@
       <div class="right__content">
         <nav class = "header">
           <ul class = "nav__links">
+            <li class = "">
+              <div class="profile__container">
+                <img src="<?php echo $_SESSION['user_image'] ?>" alt="user image" class="avatar__img">
+                <span><?php echo $_SESSION['user_name'] ?></span>
+              </div>
+            </li>
             <li class = "" >
-              <a href = "">
-                Enroll for Course
+              <a href = "stu_registration_page.php">
+                Register Account
               </a>
             </li>
             <li class = "" >
-              <a href = "">
-                Enolled Course
-              </a>
-            </li>
-            <li class = "" >
-              <a href = "">
-                My Profile
+              <a href = "stu_display_info.php">
+                Display Information
               </a>
             </li>
             <li class = "" >
