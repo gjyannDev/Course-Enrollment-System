@@ -56,7 +56,7 @@
 
 .footer__contaierUP {
   height: 124px;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-black);
   display: flex;
   align-items: center;
 }
@@ -66,3 +66,4 @@
   display: flex;
   gap: var(--size-36px);
 }
+
