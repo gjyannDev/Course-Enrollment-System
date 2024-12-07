@@ -30,19 +30,34 @@ session_start();
           <ul class = "nav__links">
             <li class = "">
               <div class="profile__container">
-                <img src="<?php echo $_SESSION['user_image'] ?>" alt="user image" class="avatar__img">
-                <span><?php echo $_SESSION['user_name'] ?></span>
+                <?php
+                  if ($_SESSION['user_type'] == 'user') {
+                      echo '<img src="' . $_SESSION['user_image'] . '" alt="user image" class="avatar__img">';
+                      echo '<span>' . $_SESSION['user_name'] . '</span>';
+                  } else {
+                      echo '<img src="' . $_SESSION['admin_image'] . '" alt="user image" class="avatar__img">';
+                      echo '<span>' . $_SESSION['admin_name'] . '</span>';
+                  }
+                ?>
               </div>
             </li>
             <li class = "" >
-              <a href = "stu_registration_page.php">
-                Register Account
-              </a>
+              <?php
+                if ($_SESSION['user_type'] == 'user') {
+                  echo '<a href = "stu_registration_page.php">' . "Register Account" . '</a>';
+                } else {
+                  echo '<a href = "stu_registration_page.php">' . "Add Student" . '</a>';
+                }
+              ?>
             </li>
             <li class = "" >
-              <a href = "stu_display_info.php">
-                Display Information
-              </a>
+              <?php
+                  if ($_SESSION['user_type'] == 'user') {
+                    echo '<a href = "stu_display_info.php">' . "Display Information" . '</a>';
+                  } else {
+                    echo '<a href = "display_student_info.php">' . "Display Student Info" . '</a>';
+                  }
+                ?>
             </li>
             <li class = "" >
               <a href = "logout.php">
