@@ -19,14 +19,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if($row['user_type'] == 'admin'){
 
       $_SESSION['admin_name'] = $row['user_name'];
+      $_SESSION['admin_image'] = $row['user_image'];
+      $_SESSION['user_type'] =  $row['user_type'];
       header('location: admin_page.php');
 
    } elseif($row['user_type'] == 'user'){
 
       $_SESSION['user_name'] = $row['user_name'];
       $_SESSION['user_image'] = $row['user_image'];
+      $_SESSION['user_type'] = $row['user_type'];
       header('location: user_home_page.php');
-      exit();
    } 
 
   } else {
